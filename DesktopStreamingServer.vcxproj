@@ -63,6 +63,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(ProjectDir)/libs/ffmpeg/lib;$(ProjectDir)/libs/glfw/lib-vc2010-32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>glfw3.lib;opengl32.lib;avdevice.lib;avformat.lib;swresample.lib;avcodec.lib;swscale.lib;avutil.lib;dxgi.lib;d3d11.lib;d3d9.lib;dxva2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
     </Link>
     <PostBuildEvent>
       <Command>xcopy /y /d "$(SolutionDir)\run-env\*.dll" "$(TargetDir)"</Command>
@@ -88,6 +89,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(ProjectDir)/libs/ffmpeg/lib;$(ProjectDir)/libs/glfw/lib-vc2010-32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>glfw3.lib;opengl32.lib;avdevice.lib;avformat.lib;swresample.lib;avcodec.lib;swscale.lib;avutil.lib;dxgi.lib;d3d11.lib;d3d9.lib;dxva2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
     </Link>
     <PostBuildEvent>
       <Command>xcopy /y /d "$(SolutionDir)\run-env\*.dll" "$(TargetDir)"</Command>
