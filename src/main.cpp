@@ -14,6 +14,7 @@
 #include "ScreenLive.h"
 #include <iostream>
 
+using namespace std;
 
 int main(int argc, char* argv[])
 {
@@ -30,7 +31,7 @@ int main(int argc, char* argv[])
 	live_config.suffix = "live";
 
 	// handle command lines arguments
-	// e.g. streamingserver.exe --codec h264_qsv --framerate 25 --bitrate 8000000 --host 0.0.0.0 --port 8554 --suffix live
+	// e.g. streamingserver.exe --codec h264_nvenc --framerate 25 --bitrate 8000000 --host 0.0.0.0 --port 8554 --suffix live
 	for (int i = 1; i < argc; i++) {
 		if (std::strcmp(argv[i], "--codec") == 0) {
 			avconfig.codec = std::string(argv[i + 1]);
@@ -57,6 +58,13 @@ int main(int argc, char* argv[])
 			i++;
 		}
 	}
+
+	// output options
+	cout << "Codec: " << avconfig.codec << endl;
+	cout << "Framerate: " << avconfig.framerate << endl;
+	cout << "Bitrate: " << avconfig.bitrate_bps << endl;
+	cout << "RTSP URL: http://" << live_config.ip << ":" << live_config.port << "/" << live_config.suffix << endl;
+	cout << endl;
 
 	if (!ScreenLive::Instance().Init(avconfig)) {
 		return 0;
