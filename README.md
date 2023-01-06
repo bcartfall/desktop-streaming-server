@@ -1,6 +1,6 @@
 # Desktop Streaming Server
 
-This application was developed to solve the problem of not being able to fully focus on a video while completing all workout activities. This is the Desktop application that serves the video to a network connect mobile application. See TODO for the android mobile application.
+This application was developed to solve the problem of not being able to fully focus on a video while completing all workout activities. This is the Desktop application that serves the video to a network connect mobile application. See https://github.com/bcartfall/desktop-streaming-stopwatch for the android mobile application.
 
 The problem: When doing workout stretches and activities such as planks the head is facing the floor and it is not possible to watch the computer screen.
 
@@ -19,8 +19,8 @@ streamingserver.exe --codec h264_nvenc --framerate 25 --bitrate 8000000 --host 0
 # Requirements
 
 - Windows 8 or later.
-- (optional) NVENC codec - NVIDIA GPU https://developer.nvidia.com/nvidia-video-codec-sdk
-- (optional) QSV codec - Intel QSV compatible processor
+- (optional) NVENC codec - NVIDIA GPU https://developer.nvidia.com/nvidia-video-codec-sdk.
+- (optional) QSV codec - Intel QSV compatible processor.
 
 # Licence
 
@@ -28,4 +28,4 @@ MIT.
 
 This desktop server code was based on https://github.com/PHZ76/DesktopSharing. 
 
-This software uses code of FFmpeg licensed under the LGPLv2.1 and its source can be downloaded at https://ffmpeg.org/
+This software uses code from FFmpeg licensed under the LGPLv2.1 and its source can be downloaded at https://ffmpeg.org/
